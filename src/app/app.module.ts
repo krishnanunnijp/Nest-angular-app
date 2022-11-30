@@ -8,6 +8,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { TopEmpoyeesPageComponent } from './top-empoyees-page/top-empoyees-page.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoutes:Routes=[
   {
@@ -23,8 +25,12 @@ const myRoutes:Routes=[
     component: GalleryPageComponent
   },
   {
-    path:"",
+    path:"top",
     component:TopEmpoyeesPageComponent
+  },
+  {
+    path:"",
+    component:AdminLoginComponent
   },
 ]
 
@@ -34,12 +40,14 @@ const myRoutes:Routes=[
     HomePageComponent,
     AboutPageComponent,
     GalleryPageComponent,
-    TopEmpoyeesPageComponent
+    TopEmpoyeesPageComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoutes)
+    RouterModule.forRoot(myRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
