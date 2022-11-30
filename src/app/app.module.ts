@@ -49,6 +49,7 @@ const myRoutes:Routes=[
     component:ViewFriendsComponent
   },
   {
+
     path:"employee",
     component:EmployeeLoginComponent
   },
@@ -60,6 +61,11 @@ const myRoutes:Routes=[
     path:"signup",
     component:EmployeeRegisterComponent
   },
+
+    path:"dash",
+    component:ViewDashboardComponent
+  },
+
 ]
 
 @NgModule({
@@ -77,6 +83,7 @@ const myRoutes:Routes=[
     ViewDashboardComponent,
     EmployeeLoginComponent,
     EmployeeRegisterComponent
+
   ],
   imports: [
     BrowserModule,
