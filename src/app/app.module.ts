@@ -13,7 +13,10 @@ import { FormsModule } from '@angular/forms';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { ViewCoursesComponent } from './view-courses/view-courses.component';
 import { HttpClientModule} from '@angular/common/http';
-import { ViewFriendsComponent } from './view-friends/view-friends.component'
+import { ViewFriendsComponent } from './view-friends/view-friends.component';
+import { ViewNavbarComponent } from './view-navbar/view-navbar.component';
+import { ViewDashboardComponent } from './view-dashboard/view-dashboard.component';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component'
 
 const myRoutes:Routes=[
   {
@@ -44,6 +47,10 @@ const myRoutes:Routes=[
     path:"friends",
     component:ViewFriendsComponent
   },
+  {
+    path:"dash",
+    component:ViewDashboardComponent
+  },
 ]
 
 @NgModule({
@@ -56,7 +63,10 @@ const myRoutes:Routes=[
     AdminLoginComponent,
     AdminNavbarComponent,
     ViewCoursesComponent,
-    ViewFriendsComponent
+    ViewFriendsComponent,
+    ViewNavbarComponent,
+    ViewDashboardComponent,
+    EmployeeLoginComponent
   ],
   imports: [
     BrowserModule,
