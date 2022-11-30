@@ -20,7 +20,7 @@ export class AddFriendsComponent {
     this.api.addFriends(this.data).subscribe(
       (Status1:any)=>{
         if(Status1.status=="success"){
-          alert("success")
+          alert("successfully added")
           this.name=""
           this.friendName=""
           this.friendNickName=""

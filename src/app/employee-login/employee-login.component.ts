@@ -18,7 +18,7 @@ export class EmployeeLoginComponent {
       "password":this.password
     }
     if(this.data.id=="1122" && this.password=="12345"){
-      this.route.navigate([''])
+      this.route.navigate(['/add'])
       this.id = ""
       this.password = ""
     }else{

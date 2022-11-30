@@ -19,7 +19,8 @@ import { ViewDashboardComponent } from './view-dashboard/view-dashboard.componen
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
 import { AddCourseComponent } from './add-course/add-course.component';
-import { AddFriendsComponent } from './add-friends/add-friends.component'
+import { AddFriendsComponent } from './add-friends/add-friends.component';
+import { AddNavComponent } from './add-nav/add-nav.component'
 
 const myRoutes:Routes=[
   {
@@ -64,10 +65,6 @@ const myRoutes:Routes=[
     component:EmployeeRegisterComponent
   },
   {
-    path:"dash",
-    component:ViewDashboardComponent 
-  },
-  {
     path:"add",
     component:AddCourseComponent
   },
@@ -93,7 +90,8 @@ const myRoutes:Routes=[
     EmployeeLoginComponent,
     EmployeeRegisterComponent,
     AddCourseComponent,
-    AddFriendsComponent
+    AddFriendsComponent,
+    AddNavComponent
 
   ],
   imports: [
