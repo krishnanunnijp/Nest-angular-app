@@ -17,7 +17,8 @@ import { ViewFriendsComponent } from './view-friends/view-friends.component';
 import { ViewNavbarComponent } from './view-navbar/view-navbar.component';
 import { ViewDashboardComponent } from './view-dashboard/view-dashboard.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
-import { EmployeeRegisterComponent } from './employee-register/employee-register.component'
+import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
+import { AddCourseComponent } from './add-course/add-course.component'
 
 const myRoutes:Routes=[
   {
@@ -65,7 +66,10 @@ const myRoutes:Routes=[
     path:"dash",
     component:ViewDashboardComponent 
   },
-
+  {
+    path:"add",
+    component:AddCourseComponent
+  },
 ]
 
 @NgModule({
@@ -82,7 +86,8 @@ const myRoutes:Routes=[
     ViewNavbarComponent,
     ViewDashboardComponent,
     EmployeeLoginComponent,
-    EmployeeRegisterComponent
+    EmployeeRegisterComponent,
+    AddCourseComponent
 
   ],
   imports: [

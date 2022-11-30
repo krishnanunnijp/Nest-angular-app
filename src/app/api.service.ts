@@ -14,5 +14,11 @@ export class ApiService {
     fetchFriends=()=>{
       return this.http.get("https://dummyapifriends.herokuapp.com/view")
     }
+    addCourse=(addValue:any)=>{
+      return this.http.post("https://mylinkurcodesapp.herokuapp.com/addcourse",addValue)
+    }
+    addFriends=(frienValue:any)=>{
+      return this.http.post("https://dummyapifriends.herokuapp.com/adddata",frienValue)
+    }
 
 }
