@@ -11,6 +11,8 @@ import { TopEmpoyeesPageComponent } from './top-empoyees-page/top-empoyees-page.
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { ViewCoursesComponent } from './view-courses/view-courses.component';
+import { HttpClientModule} from '@angular/common/http'
 
 const myRoutes:Routes=[
   {
@@ -33,6 +35,10 @@ const myRoutes:Routes=[
     path:"",
     component:AdminLoginComponent
   },
+  {
+    path:"course",
+    component:ViewCoursesComponent
+  },
 ]
 
 @NgModule({
@@ -43,13 +49,15 @@ const myRoutes:Routes=[
     GalleryPageComponent,
     TopEmpoyeesPageComponent,
     AdminLoginComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    ViewCoursesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
