@@ -5,11 +5,12 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of data">
                     <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">{{i.name}}</h5>
-                          <p class="card-text">{{i.friendName}}</p>
-                          <p class="card-text">{{i.friendNickName}}</p>
-                          <p class="card-text">{{i.DescribeYourFriend}}</p>
+                        <img src="{{image}}" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title text-success">{{i.name}}</h5>
+                          <p class="card-text text-success">{{i.friendName}}</p>
+                          <p class="card-text text-success">{{i.friendNickName}}</p>
+                          <p class="card-text text-success">{{i.DescribeYourFriend}}</p>
                         </div>
                       </div>
                 </div>

@@ -8,6 +8,7 @@ import { ApiService } from '../api.service';
 })
 export class ViewFriendsComponent {
   data:any=[]
+  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWhLqaguy3e0HRQywVuW_IXBWjjJbcqiMXGtOvQtZTTQ&s"
   constructor(private api:ApiService){
     api.fetchFriends().subscribe(
       (readValues:any)=>{
