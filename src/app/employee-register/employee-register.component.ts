@@ -50,7 +50,10 @@ signup=()=>{
 
 
 }
+if(this.data.password1==this.data.password2){
 console.log(this.data)
+alert("register successfull")
+}
 }
 
 }
