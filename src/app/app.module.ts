@@ -48,6 +48,7 @@ const myRoutes:Routes=[
     component:ViewFriendsComponent
   },
   {
+
     path:"employee",
     component:EmployeeLoginComponent
   },
