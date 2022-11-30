@@ -18,7 +18,9 @@ export class AdminLoginComponent {
       "password": this.password
     }
     if (this.data.username == "admin" && this.data.password == "nestdigital") {
-      this.route.navigate(['/home'])
+      this.route.navigate(['/dash'])
+      this.username = ""
+      this.password = ""
     } else {
       alert("invalid login")
     }
