@@ -61,9 +61,9 @@ const myRoutes:Routes=[
     path:"signup",
     component:EmployeeRegisterComponent
   },
-
+  {
     path:"dash",
-    component:ViewDashboardComponent
+    component:ViewDashboardComponent 
   },
 
 ]
