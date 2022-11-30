@@ -10,6 +10,7 @@ import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { TopEmpoyeesPageComponent } from './top-empoyees-page/top-empoyees-page.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 
 const myRoutes:Routes=[
   {
@@ -41,7 +42,8 @@ const myRoutes:Routes=[
     AboutPageComponent,
     GalleryPageComponent,
     TopEmpoyeesPageComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    AdminNavbarComponent
   ],
   imports: [
     BrowserModule,
