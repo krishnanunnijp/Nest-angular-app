@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+
 import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-employee-login',
@@ -7,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./employee-login.component.css']
 })
 export class EmployeeLoginComponent {
+
   constructor(private route:Router){}
   id=""
   password=""
@@ -24,5 +27,6 @@ export class EmployeeLoginComponent {
       alert("invalid login")
     }
   }
+
 
 }
